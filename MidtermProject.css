@@ -1,0 +1,32 @@
+
+body{
+  font-family:"Raleway", serif;
+
+}
+.bgimage{
+background:#cfecf2;
+background-position:center;
+background-size:cover;
+height: 150px;
+text-align: center;
+}
+
+
+ul{
+list-style-type: none;
+margin:0;
+padding:0;
+width:100px
+}
+
+li a{
+display:block;
+color:#000;
+text-decoration:none;
+}
+
+.row img{
+margin:0 0 1px;
+width:100%;
+
+}
