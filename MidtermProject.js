@@ -1,22 +1,29 @@
-var el=document.getElementById("buttonA").addEventListener("click",function(){prompt("Please enter your answer");});
+var answer;
 
-var learnerAnswer=prompt("Please enter your answer");
-function learnerAnswer(){
-if(learnerAnswer ==="left"){
-  alert ("Good job.");
-}
-else {
-  alert ("Sorry, you have entered the wrong answer. Please try again");
-}
-}
+var el = document.getElementById("buttonA").addEventListener("click", function() {
+    answer = prompt("Please enter your answer");
+		learnerAnswer('A');
+});
 
-var el=document.getElementById("buttonB").addEventListener("click",function(){prompt("Please enter your answer");});
-var learnerAnswer=prompt("Please enter your answer");
-function learnerAnswer(){
-if(learnerAnswer ==="right"){
-  alert ("Good job.");
-}
-else {
-  alert ("Sorry, you have entered the wrong answer. Please try again");
-}
-}
+var el = document.getElementById("buttonB").addEventListener("click", function() {
+    answer = prompt("Please enter your answer");
+		learnerAnswer('B');
+});
+
+function learnerAnswer(questionId) {
+
+	if (questionId === "A") {
+		if (answer === "left") {
+        alert("Good job.");
+    } else {
+        alert("Sorry, you have entered the wrong answer. Please try again");
+    }
+	} else {
+		if (answer === "right") {
+        alert("Good job.");
+    } else {
+        alert("Sorry, you have entered the wrong answer. Please try again");
+    }
+	}
+
+};
